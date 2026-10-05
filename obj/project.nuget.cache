@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3y3ydkVQGyw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kg951\\CalculatorAPI\\CalculatorAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kg951\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.12\\microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "C:\\Users\\kg951\\.nuget\\packages\\microsoft.openapi\\2.12.0\\microsoft.openapi.2.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
