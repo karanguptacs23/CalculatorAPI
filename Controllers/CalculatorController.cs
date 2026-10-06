@@ -25,15 +25,25 @@ public class CalculatorController : ControllerBase
     }
 
     [HttpGet("divide")]
-    public double Divide(int a, int b)
+    public IActionResult Divide(int a, int b)
     {
-        return (double)a / b;
+        if (b == 0)
+        {
+            return BadRequest("Cannot divide by zero.");
+        }
+
+        return Ok((double)a / b);
     }
 
     [HttpGet("modulus")]
-    public int Modulus(int a, int b)
+    public IActionResult Modulus(int a, int b)
     {
-        return a % b;
+        if (b == 0)
+        {
+            return BadRequest("Cannot calculate modulus by zero.");
+        }
+
+        return Ok(a % b);
     }
 
     [HttpGet("power")]
