@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <div class="header">
+      <div>
+        <p class="eyebrow">ASP.NET Core Web API</p>
+        <h1>Calculator</h1>
+      </div>
+      <span class="status">API Connected</span>
+    </div>
+
+    <div class="display" id="display">0</div>
+
+    <div class="inputs">
+      <label>
+        First number
+        <input id="a" type="number" step="any" placeholder="10">
+      </label>
+
+      <label>
+        Second number
+        <input id="b" type="number" step="any" placeholder="20">
+      </label>
+    </div>
+
+    <div class="buttons">
+      <button data-operation="add">+</button>
+      <button data-operation="subtract">−</button>
+      <button data-operation="multiply">×</button>
+      <button data-operation="divide">÷</button>
+
+      <button data-operation="modulus">%</button>
+      <button data-operation="power">Power</button>
+      <button data-operation="square">Square</button>
+      <button data-operation="sqrt">√</button>
+
+      <button data-operation="max">Max</button>
+      <button data-operation="min">Min</button>
+      <button data-operation="abs">Abs</button>
+    </div>
+
+    <button class="clear" id="clear">Clear</button>
+
+    <p class="message" id="message"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
